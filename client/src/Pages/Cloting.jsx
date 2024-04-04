@@ -59,7 +59,7 @@ const setData = (data) =>{
     
 const[token,setToken] =useState("")
 
-axios.get("http://localhost:3000/try")
+axios.get(`${import.meta.env.VITE_KEY}try`)
 .then((e)=>{
  if(e.data.cookie){
  setToken(e.data.cookie)
