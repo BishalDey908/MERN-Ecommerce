@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+
+    
+
+
+    
+    
+  
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Shopper's Delight</title>
+    <link rel="icon" type="image/x-icon" href="./src/assests/apple-touch-icon.png">
+  </head>
+  <body >
+    <div id="root" ></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+
+
+    <!-- <script>
+      document.getElementById("hamburger").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("toggle");
+          for (let i = 0; i < navToggle.length; i++) {
+              navToggle.item(i).classList.toggle("hidden");
+          }
+      };
+  </script> -->
+
+  <script src="./script.js"></script>
+  
+  
+</script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script> -->
+
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script> -->
+
+<script>
+  
+</script>
+<!-- ----------------------for send mail----------------------- -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendMale(){
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "bishaldey7439@gmail.com",
+      Password : "D75DAA9F68E377785E002281A7CE00685C7A",
+      To : 'bishaldey7439@gmail.com',
+      From : document.querySelector("#email").value,
+      Subject : "This is the subject",
+      Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+  }
+</script>
+
+
+
+<!-- -----------------------------------landing page animation----------------------------- -->
+
+<script src="./raw.githubusercontent.com_juliangarnier_anime_master_lib_anime.min.js"></script>
+<script>
+  const container =document.querySelector(".container")
+  for(var i=0;i<=100;i++){
+    const blocks =document.createElement("div")
+    blocks.classList.add('block')
+    container.appendChild(blocks)
+  }
+
+
+  function animateBlocks(){
+      anime({
+          targets:".block",
+          translateX: function(){
+              return  anime.random(-700,700)
+          },
+          translateY: function(){
+              return  anime.random(-500,500)
+          },
+          scale:function(){
+              return anime.random(1,5)
+          },
+
+          easing: "linear",
+          duration: 3000,
+          delay: anime.stagger(10),
+          complete: animateBlocks,
+      })
+  }
+
+  animateBlocks()
+</script>
+<!-- -----------------------------------landing page animation----------------------------- -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+</style>
+
+  </body>
+</html>
