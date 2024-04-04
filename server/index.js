@@ -22,7 +22,7 @@ let data;
 //--------------Middleware-------------------
 app.use(
   cors({
-    origin: ["https://mern-ecommerce-eta-five.vercel.app/"],
+    origin: ["*"],
     methods: ["GET", "POST"],
     credentials: true,
   })
