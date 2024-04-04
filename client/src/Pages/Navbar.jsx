@@ -180,7 +180,7 @@ const Navbar = () => {
                         auth ? <Link  id="title1" to="/cloting"
                             className="hover-underline-animation  py-2 pl-3 pr-4 text-white  rounded lg:bg-transparent  lg:p-0  xl:text-xl text-center w-full text-lg"
                             aria-current="page"  >Dress</Link>: <Link id="title1" to="/cloting"
-                            className="hidden hover-underline-animation  py-2 pl-3 pr-4 text-white  rounded lg:bg-transparent  lg:p-0  xl:text-xl text-center w-full text-lg "
+                            className=" hover-underline-animation  py-2 pl-3 pr-4 text-white  rounded lg:bg-transparent  lg:p-0  xl:text-xl text-center w-full text-lg "
                             aria-current="page"  >Dress</Link> 
                     }
                     </li>
