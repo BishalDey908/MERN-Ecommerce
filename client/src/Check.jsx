@@ -9,7 +9,7 @@ const Check = () => {
     
     const [cookie,setCookie] = useState("")
     const [data, setData] = useState("")
-    axios.get("http://localhost:3000/check")
+    axios.get(`${import.meta.env.VITE_KEY}check`)
     .then((e)=>{
         setCookie(e.data.cookie);
         setData(jwtDecode(cookie).auth)
