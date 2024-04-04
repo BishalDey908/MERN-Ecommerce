@@ -12,7 +12,7 @@ const Placedorders = () => {
     
   },[user])
 
-  axios.post("http://localhost:3000/getplacedorder",{user})
+  axios.post(`${import.meta.env.VITE_KEY}getplacedorder`,{user})
   .then((e)=>{
     setData(e.data.orderinfo)
     // console.log(data);
@@ -23,7 +23,7 @@ const Placedorders = () => {
 
   const deleteOrder= (data) =>{
     console.log(data._id)
-    axios.post("http://localhost:3000/deleteplacedoder",{id:data._id})
+    axios.post(`${import.meta.env.VITE_KEY}deleteplacedoder`,{id:data._id})
     .then((e)=>console.log(e))
     .catch((err)=>console.log(err))
   }
